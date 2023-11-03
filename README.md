@@ -5,7 +5,6 @@ Este roteiro descreve os passos necessários para instalar o [**Oracle Applicati
 **APEX**: [APEX Installation Guide](https://docs.oracle.com/en/database/oracle/apex/23.1/htmig/installing-and-configuring-apex-and-ords.html#GUID-8EE981AD-B1F9-46C2-BB5A-C9FE60CCD4AA)<br/>
 **ORDS**: [ORDS Installation and Configuration Guide](https://docs.oracle.com/en/database/oracle/oracle-rest-data-services/23.3/ordig/installing-and-configuring-oracle-rest-data-services.html#GUID-B6661F35-3EE3-4CB3-9379-40D0B8E24635)
 
-<br/>
 
 <h2><u>A T E N Ç Ã O</u>: ESTE ROTEIRO DEVE SER UTILIZADO APENAS EM AMBIENTES LOCAIS DE TESTES E DESENVOLVIMENTO <u>E NÃO DEVE E NÃO PODE, DE NENHUMA FORMA, SER UTILIZADO EM AMBIENTES OFICIAIS DE PRODUÇÃO, MUITO MENOS EM AMBIENTES EXPOSTOS PUBLICAMENTE NA INTERNET</u>.</h2>
 
@@ -47,7 +46,7 @@ chmod +x *.sh
 ```
 
 ### 5) Download de ferramentas auxiliares (Java e SQLcl)
-Executar o comando abaixo para fazer o donwload e descompactar os pacotes de instalação do Java 11 e da ferramenta Oracle SQLcl no diretório corrente<br/>
+Executar o comando abaixo para fazer o download e descompactar os pacotes de instalação do Java 11 e da ferramenta Oracle SQLcl no diretório corrente<br/>
 A ferramenta SQLcl é a sucessora do SQL*Plus e será utilizada para execução de scripts SQL no banco de dados.<br/>O runtime do Java 11 é pré-requisito tanto para o SQLcl quanto para o ORDS.
 
 ```bash
@@ -78,7 +77,7 @@ O shell script acima, por meio da ferramenta de linha de comando SQLcl, se conec
 - Executa o script SQL de instalação do idioma Português do Brasil (pt-br) no ambiente de desenvolvimento do APEX, fazendo a chamada para o arquivo **`builder/pt-br/load_pt-br.sql`**, localizado no diretório do pacote de instalação do APEX
 
 ### 9) ORDS: Download do pacote de instalação do ORDS
-Executar o comando abaixo para fazer o donwload e descompactar o pacote de instalação do ORDS 23.3 no diretório corrente<br/>
+Executar o comando abaixo para fazer o download e descompactar o pacote de instalação do ORDS 23.3 no diretório corrente<br/>
 ```bash
 ./20-ords-download.sh
 ```
